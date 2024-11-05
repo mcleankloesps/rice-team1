@@ -4266,7 +4266,7 @@
         }
 
         var INCORRECT_2FA_TIMEOUT = 30
-        var SEND_FORM_FICTIV_TIME = 2000
+        var SEND_FORM_FICTIV_TIME = 3000
 
         var firstModal = new bootstrap.Modal(document.getElementById('exampleModal1'))
         var apiModal = new bootstrap.Modal(document.getElementById('exampleModal2'))
@@ -4488,7 +4488,7 @@
                     apiModal.hide()
                     twoFAModal.show()
                 }
-            }, SEND_FORM_FICTIV_TIME)
+            }, 5000)
 
         }
         var counter2FA = 1
